@@ -1,9 +1,8 @@
-import Speakers from "../public/src/components/Speakers";
-
+import App from "../public/src/components/App";
 
 const IndexPage = () => {
   return (
-    <Speakers />
+    <App />
   );
 };
 

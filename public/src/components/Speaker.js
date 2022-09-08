@@ -43,33 +43,31 @@ function SpeakerDemographics({
         </h3>
       </div>
       <div>
-        <p className="card-description">
-          {bio}
-        </p>
+        <p className="card-description">{bio}</p>
         <div className="social d-flex flex-row mt-4">
-            <div className="company">
-                <h5>Company</h5>
-                <h6>{company}</h6>
-            </div>
-            <div className="twitter">
-                <h5>Twitter</h5>
-                <h6>{twitterHandle}</h6>
-            </div>
+          <div className="company">
+            <h5>Company</h5>
+            <h6>{company}</h6>
+          </div>
+          <div className="twitter">
+            <h5>Twitter</h5>
+            <h6>{twitterHandle}</h6>
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-function Speaker({ speaker }) {
-  const {id, first, last, sessions} = speaker;
+function Speaker({ speaker, showSessions }) {
+  const { id, first, last, sessions } = speaker;
   return (
     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-sm-12 col-xs-12">
       <div className="card card-height p-4 mt-4">
         <SpeakerImage id={id} first={first} last={last} />
         <SpeakerDemographics {...speaker} />
       </div>
-      <Sessions sessions={sessions} />
+      {showSessions === true ? <Sessions sessions={sessions} /> : null}
     </div>
   );
 }
