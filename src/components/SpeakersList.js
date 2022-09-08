@@ -1,12 +1,15 @@
 import Speaker from "./Speaker";
 import ReactPlaceholder from "react-placeholder";
-import useRequestSpeakers from "../hooks/useRequesSpeakers";
+import useRequestDelay, {REQUEST_STATUS,} from "../hooks/useRequestDelay";
+import {data} from "../../pages/SpeakerData";
+
+
 
 function SpeakersList({ showSessions }) {
-  const { SpeakersData, isLoading, hasErrored, error, onFavoriteToggle } =
-    useRequestSpeakers(2000);
+  const { data:SpeakersData, requestStatus, error, updateRecord } =
+    useRequestDelay(2000, data);
 
-  if (hasErrored === true) {
+  if (requestStatus===REQUEST_STATUS.FAILURE) {
     return (
       <div>
         ERROR: <b>Loading Speaker Data Failed {error}</b>
@@ -22,7 +25,7 @@ function SpeakersList({ showSessions }) {
         type="media"
         rows={15}
         className="speakerslist-placeholder"
-        ready={isLoading === false}
+        ready={requestStatus === REQUEST_STATUS.SUCESS}
       >
         <div className="row">
           {SpeakersData.map(function (speaker) {
@@ -32,7 +35,9 @@ function SpeakersList({ showSessions }) {
                 speaker={speaker}
                 showSessions={showSessions}
                 onFavoriteToggle={() => {
-                  onFavoriteToggle(speaker.id);
+                  updateRecord({
+                    ...speaker,favorite: !speaker.favorite,
+                  });
                 }}
               />
             );
