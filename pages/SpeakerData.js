@@ -13,247 +13,247 @@ export const data = [
           id: "32",
           title: "Rails powered by GlassFish",
           eventYear: "2008",
-          room: {
+          room: [{
             name: "Cornell Hall",
             capacity: 0,
-          },
+          }],
         },
         {
           id: "58",
           title: "Metro: Hello World to .NET 3.5 interoperable Web service",
           eventYear: "2008",
-          room: {
+          room: [{
             name: "Cornell Hall",
             capacity: 0,
-          },
+          }],
         },
         {
           id: "61",
           title: "GlassFish: On a mission to please developers",
           eventYear: "2008",
-          room: {
+          room: [{
             name: "Cornell Hall",
             capacity: 0,
-          },
+          }],
         },
         {
           id: "263",
           title: "Java EE 6 and GlassFish v3: Paving the path for future",
           eventYear: "2009",
-          room: {
+          room: [{
             name: "5502",
             capacity: 70,
-          },
+          }],
         },
         {
           id: "264",
           title:
             "Using Eclipse for Java EE 6 development for the GlassFish™ Application Server",
           eventYear: "2009",
-          room: {
+          room: [{
             name: "5503",
             capacity: 44,
-          },
+          }],
         },
         {
           id: "265",
           title: "Dynamic Languages &amp; Web Frameworks in GlassFish",
           eventYear: "2009",
-          room: {
+          room: [{
             name: "4204",
             capacity: 45,
-          },
+          }],
         },
         {
           id: "440",
           title: "Java EE 6: Doing More With Less",
           eventYear: "2010",
-          room: {
+          room: [{
             name: "8401",
             capacity: 48,
-          },
+          }],
         },
         {
           id: "441",
           title: "OSGi and Java EE in GlassFish",
           eventYear: "2010",
-          room: {
+          room: [{
             name: "4220",
             capacity: 50,
-          },
+          }],
         },
         {
           id: "444",
           title: "Running your Java EE 6 application in the Cloud",
           eventYear: "2010",
-          room: {
+          room: [{
             name: "3106",
             capacity: 45,
-          },
+          }],
         },
         {
           id: "766",
           title:
             "Deploy and Monitor your Java EE 6 session in a fully-clustered GlassFish",
           eventYear: "2011",
-          room: {
+          room: [{
             name: "4201",
             capacity: 70,
-          },
+          }],
         },
         {
           id: "770",
           title: "The Java EE 7 Platform: Developing for the Cloud",
           eventYear: "2011",
-          room: {
+          room: [{
             name: "4201",
             capacity: 70,
-          },
+          }],
         },
         {
           id: "864",
           title: "RESTful Java on Steroids: JAX-RS 2.0",
           eventYear: "2012",
-          room: {
+          room: [{
             name: "5502",
             capacity: 70,
-          },
+          }],
         },
         {
           id: "1131",
           title: "50 new features of Java EE 7 in 50 minutes",
           eventYear: "2013",
-          room: {
+          room: [{
             name: "3525",
             capacity: 110,
-          },
+          }],
         },
         {
           id: "1262",
           title: "Minecraft Modding Workshop (Part 1 of 2)",
           eventYear: "2013",
-          room: {
+          room: [{
             name: "PSEC4603",
             capacity: 1,
-          },
+          }],
         },
         {
           id: "1352",
           title: "Minecraft Modding Workshop (Part 2 of 2)",
           eventYear: "2013",
-          room: {
+          room: [{
             name: "PSEC4603",
             capacity: 1,
-          },
+          }],
         },
         {
           id: "1440",
           title: " All about WildFly, Only using demos",
           eventYear: "2014",
-          room: {
+          room: [{
             name: "4302",
             capacity: 41,
-          },
+          }],
         },
         {
           id: "1441",
           title: "Java EE 7 development using Eclipse",
           eventYear: "2014",
-          room: {
+          room: [{
             name: "4301",
             capacity: 64,
-          },
+          }],
         },
         {
           id: "2529",
           title: "Introductory Minecraft Modding with Forge - Part 1",
           eventYear: "2014",
-          room: {
+          room: [{
             name: "PSEC4501",
             capacity: 73,
-          },
+          }],
         },
         {
           id: "2557",
           title: "Introductory Minecraft Modding with Forge - Part II",
           eventYear: "2014",
-          room: {
+          room: [{
             name: "PSEC4501",
             capacity: 73,
-          },
+          }],
         },
         {
           id: "3694",
           title: "Docker and Kubernetes Recipes for Java Applications",
           eventYear: "2015",
-          room: {
+          room: [{
             name: "AD-123",
             capacity: 70,
-          },
+          }],
         },
         {
           id: "4835",
           title: "Docker and Kubernetes Workshop",
           eventYear: "2015fall",
-          room: {
+          room: [{
             name: "RD-301",
             capacity: 42,
-          },
+          }],
         },
         {
           id: "4860",
           title: "Minecraft Modding with Forge - Part 1",
           eventYear: "2015",
-          room: {
+          room: [{
             name: "AB-142",
             capacity: 78,
-          },
+          }],
         },
         {
           id: "5922",
           title: "Minecraft Modding with Forge - Part 2",
           eventYear: "2015",
-          room: {
+          room: [{
             name: "AB-142",
             capacity: 78,
-          },
+          }],
         },
         {
           id: "6060",
           title:
             "Package, Deploy, Scale Your Applications Using Docker and Kubernetes",
           eventYear: "2016fall",
-          room: {
+          room: [{
             name: "Cornell Hall",
             capacity: 0,
-          },
+          }],
         },
         {
           id: "6205",
           title: "Service Discovery in Container Orchestration Frameworks",
           eventYear: "2017",
-          room: {
+          room: [{
             name: "Town Square C",
             capacity: 130,
-          },
+          }],
         },
         {
           id: "7379",
           title: "Java developer’s journey in Kubernetes land",
           eventYear: "2018",
-          room: {
+          room: [{
             name: "Fireside C",
             capacity: 80,
-          },
+          }],
         },
         {
           id: "7486",
           title: "Using Kubernetes for Machine Learning Frameworks",
           eventYear: "2019",
-          room: {
+          room: [{
             name: "Town Square A",
             capacity: 130,
-          },
+          }],
         },
       ],
     },
@@ -271,19 +271,19 @@ export const data = [
           id: "1011",
           title: "Decomposing applications for scalability and deployability",
           eventYear: "2012",
-          room: {
+          room: [{
             name: "4306",
             capacity: 100,
-          },
+          }],
         },
         {
           id: "1133",
           title: "Developing polyglot persistence applications",
           eventYear: "2013",
-          room: {
+          room: [{
             name: "5502",
             capacity: 70,
-          },
+          }],
         },
         {
           id: "1136",

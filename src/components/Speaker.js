@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import {SpeakerFilterContext} from "../contexts/SpeakerFilterContext"
+import { SpeakerFilterContext } from "../contexts/SpeakerFilterContext";
 
 function Session({ title, room }) {
   return (
@@ -10,9 +10,20 @@ function Session({ title, room }) {
 }
 
 function Sessions({ sessions }) {
+  const { eventYear } = useContext(SpeakerFilterContext);
   return (
     <div className="sessionBox card h-250">
-      <Session title={sessions[0].title} room={sessions[0].room.name} />
+      {sessions
+        .filter(function (session) {
+          return session.eventYear === eventYear;
+        })
+        .map(function (session) {
+          return (
+            <div className="session w-100" key={session.id}>
+              <Session {...session} />
+            </div>
+          );
+        })}
     </div>
   );
 }
@@ -54,7 +65,7 @@ function SpeakerFavorite({ favorite, onFavoriteToggle }) {
         Favorite{" "}
         {inTransition ? (
           <span className="fas fa-circle-notch fa-spin"></span>
-        ): null}
+        ) : null}
       </span>
     </div>
   );
@@ -99,7 +110,7 @@ function SpeakerDemographics({
 
 function Speaker({ speaker, onFavoriteToggle }) {
   const { id, first, last, sessions } = speaker;
-  const {showSessions} = useContext(SpeakerFilterContext);  
+  const { showSessions } = useContext(SpeakerFilterContext);
   return (
     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-sm-12 col-xs-12">
       <div className="card card-height p-4 mt-4">

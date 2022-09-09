@@ -9,13 +9,16 @@ function Layout({ startingTheme, children }) {
   );
 }
 
-function LayoutNoThemeProvider({children}) {
+function LayoutNoThemeProvider({ children }) {
+  
   const { theme } = useContext(ThemeContext);
 
   return (
     <div
       className={
-        theme === "light" ? "container-fluid light" : "container-fluid dark"
+        theme === "light" ? 
+        "container-fluid light" : 
+        "container-fluid dark"
       }
     >
       {children}
