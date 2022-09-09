@@ -5,7 +5,7 @@ import {data} from "../../pages/SpeakerData";
 
 
 
-function SpeakersList({ showSessions }) {
+function SpeakersList() {
   const { data:SpeakersData, requestStatus, error, updateRecord } =
     useRequestDelay(2000, data);
 
@@ -33,7 +33,6 @@ function SpeakersList({ showSessions }) {
               <Speaker
                 key={speaker.id}
                 speaker={speaker}
-                showSessions={showSessions}
                 onFavoriteToggle={(doneCallback) => {
                   updateRecord({
                     ...speaker,favorite: !speaker.favorite,
